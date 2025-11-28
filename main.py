@@ -20,9 +20,12 @@ TempC = kelvin_to_celsius(300)
 print (TempC)
 # TODO: Copiar el DataFrame original y nombralo df_celsius
 
-
+df_celsius = df
 
 # TODO: Convertir las temperaturas de cada ciudad de Kelvin a Celsius usando la funcion creada
+
+df_celsius['Phoenix'] = df_celsius['Phoenix'].apply(kelvin_to_celcius)
+
 
 # Analisis
 
